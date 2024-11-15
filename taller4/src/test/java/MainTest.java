@@ -32,5 +32,15 @@ public class MainTest {
         Assertions.assertEquals(999, kaprekarOp(2111));
     }
 
+    @Test
+    public void testIterationsToKaprekarConstant1() {
+        // Prueba con el número 3524 (llega a 6174 en 3 iteraciones)
+        Assertions.assertEquals(3, itKaprekar(3524));
+    }
+
+    private int itKaprekar(int i) {
+        return i;
+    }
+
 
 }
