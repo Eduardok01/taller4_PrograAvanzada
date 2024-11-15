@@ -1,7 +1,7 @@
 package org.example;
 
 
-
+//esta versión del codigo no requiere un refactor significativo, por lo que se mantiene igual
 //el objetivo de este refactor es reducir las tareas que cumple el metodo original,
 //lo que implica que sera mas facil de arreglar al momento de fallar
 
