@@ -15,5 +15,11 @@ public class MainTest {
         Assertions.assertEquals(3087, kaprekarOp(3524));
     }
 
+    @Test
+    public void testKaprekarOperation2() {
+        // Prueba con el número 1000 (debe devolver 999)
+        Assertions.assertEquals(999, kaprekarOp(1000));
+    }
+
 
 }
