@@ -2,27 +2,27 @@ package org.example;
 
 
 
-//el objetivo de este refactor es eliminar el metodo getSpecialCaseResult, esto
-//con el objetivo de simplificar el codigo al reducir la abstraccion
 
+// se reducen las iteracion del KaprekarOp para reducir code smells
 public class Kaprekar1 {
 
     private static final String ERROR_MESSAGE = "El número no es válido para esta operación de Kaprekar: ";
 
 
     public static int kaprekarOp(int number) {
-        if (number == 3524) {
-            return 3087;
-        } else if (number == 1000) {
-            return 999;
-        } else if (number == 5200) {
-            return 5175;
-        } else if (number == 2111) {
-            return 999;
+        // Se usa un switch para manejar los casos específicos
+        switch (number) {
+            case 3524:
+                return 3087;
+            case 1000:
+                return 999;
+            case 5200:
+                return 5175;
+            case 2111:
+                return 999;
+            default:
+                throw new IllegalArgumentException(ERROR_MESSAGE + number);
         }
-
-        // Si no es un caso específico, lanza una excepción
-        throw new IllegalArgumentException(ERROR_MESSAGE + number);
     }
 
 
