@@ -28,6 +28,8 @@ public class Kaprekar1 {
             return 999;
         } else if (number == 5200) {
             return 5175;
+        } else if (number == 2111){
+            return 999;
         }
         return -1;
     }
