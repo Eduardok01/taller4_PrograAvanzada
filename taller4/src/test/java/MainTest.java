@@ -45,6 +45,12 @@ public class MainTest {
         Assertions.assertEquals(7, itKaprekar(5200));
     }
 
+    @Test
+    public void testIterationsToKaprekarConstant3() {
+        // Prueba con el número 1000 (llega a 6174 en 5 iteraciones)
+        Assertions.assertEquals(5, itKaprekar(1000));
+    }
+
 
 
 
