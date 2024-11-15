@@ -2,8 +2,8 @@ package org.example;
 
 
 
-//el objetivo de este refactor es eliminar el metodo getSpecialCaseResult, esto
-//con el objetivo de simplificar el codigo al reducir la abstraccion
+//el codigo pasa el test sin cambios, esto debido a que el metodo
+//KaprekarStep esta implementado en su totalidad para solucionar la problematica
 
 public class Kaprekar1 {
 
