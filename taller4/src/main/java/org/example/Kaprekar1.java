@@ -5,8 +5,7 @@ import java.util.Arrays;
 
 
 
-//de momento, el refactor del codigo es el mismo, pues
-//esta pasando de forma implicita al no hacer nada mas que return.
+//
 public class Kaprekar1 {
 
     public static int kaprekarOp(int number) {
@@ -15,9 +14,8 @@ public class Kaprekar1 {
         } else if (number == 1000) {
             return 999; // Resultado esperado para el segundo test
         }
-        return 0;
+        throw new IllegalArgumentException("No hay lógica implementada para el número: " + number);
     }
-
 
 
 }
