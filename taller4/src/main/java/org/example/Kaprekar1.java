@@ -35,4 +35,38 @@ public class Kaprekar1 {
     }
 
 
+    //considerando que el codigo apunta a resolver la operacion de kapreker
+    //se estima que lo minimo necesario es implementar codigos que permitan
+    //resolver la operacion:
+
+
+    //
+    public static int itKaprekar(int number) {
+        int iterations = 0;
+        while (number != 6174) {
+            number = kaprekarStep(number);
+            iterations++;
+        }
+        return iterations;
+    }
+
+    //
+    private static int kaprekarStep(int number) {
+        // Asegúrate de que el número tenga 4 dígitos
+        String numStr = String.format("%04d", number);
+
+
+        char[] digits = numStr.toCharArray();
+        java.util.Arrays.sort(digits);
+        String ascending = new String(digits);
+        String descending = new StringBuilder(ascending).reverse().toString();
+
+        
+        int numAsc = Integer.parseInt(ascending);
+        int numDesc = Integer.parseInt(descending);
+
+        return numDesc - numAsc;
+    }
 }
+
+

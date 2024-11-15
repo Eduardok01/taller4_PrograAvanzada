@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.example.Kaprekar1.itKaprekar;
 import static org.example.Kaprekar1.kaprekarOp;
 
 // revisar : https://plus.maths.org/content/mysterious-number-6174
@@ -38,9 +39,7 @@ public class MainTest {
         Assertions.assertEquals(3, itKaprekar(3524));
     }
 
-    private int itKaprekar(int i) {
-        return i;
-    }
+
 
 
 }
